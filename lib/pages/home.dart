@@ -59,6 +59,7 @@ class HomePage extends StatelessWidget {
         studyRoute: reply_routes.homeRoute,
       ),
       _CarouselCard(
+        key: Key("shrinecard"),
         demo: studyDemos['shrine'],
         asset: const AssetImage(
           'assets/studies/shrine_card.png',
