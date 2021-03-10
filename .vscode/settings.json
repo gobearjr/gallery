@@ -1,0 +1,9 @@
+{
+    "cucumberautocomplete.steps": [
+        "test_driver/steps/*.dart",
+    ],
+    "cucumberautocomplete.syncfeatures": "test_driver/feature/*.feature",
+    "cucumberautocomplete.gherkinDefinitionPart": "(RegExp)\\(r",
+    "cucumberautocomplete.strictGherkinCompletion": false,
+    "cucumberautocomplete.strictGherkinValidation": false,
+}
