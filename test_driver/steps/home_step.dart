@@ -10,7 +10,7 @@ class ClickShrineCard extends Given<FlutterWorld> {
       HomePageAction homepage = new HomePageAction(world.driver);
 
       homepage.clickShrineCard();
-    }
+    
   }
 
   @override
