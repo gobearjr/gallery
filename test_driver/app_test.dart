@@ -6,15 +6,15 @@ import 'steps/home_step.dart';
 
 Future<void> main() {
   final config = FlutterTestConfiguration()
-    ..features = [Glob(r"test_driver/features/**.feature")]
+    ..features = [Glob(r"test_driver/feature/**.feature")]
     ..reporters = [
       ProgressReporter(),
       TestRunSummaryReporter(),
       JsonReporter(path: './report.json')
     ] // you can include the "StdoutReporter()" without the message level parameter for verbose log information
-    ..hooks = [HookExample()]
+    // ..hooks = [HookExample()]
     ..stepDefinitions = [ClickShrineCard()]
-    ..customStepParameterDefinitions = [ColourParameter()]
+    // ..customStepParameterDefinitions = [ColourParameter()]
     ..restartAppBetweenScenarios = true
     ..targetAppPath = "test_driver/app.dart"
     // ..tagExpression = "@smoke" // uncomment to see an example of running scenarios based on tag expressions
