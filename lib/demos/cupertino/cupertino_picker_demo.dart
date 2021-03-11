@@ -37,10 +37,10 @@ class _CupertinoPickerDemoState extends State<CupertinoPickerDemo> {
       child: child,
     );
 
-    showCupertinoModalPopup<void>(
-      context: context,
-      builder: (context) => dialogBody,
-    );
+    // showCupertinoModalPopup<void>(
+    //   context: context,
+    //   builder: (context) => dialogBody,
+    // );
   }
 
   Widget _buildDatePicker(BuildContext context) {
