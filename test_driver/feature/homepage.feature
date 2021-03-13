@@ -1,6 +1,6 @@
-Feature: Login Gallery
-This is feature for navigating into Gallery
+Feature: Checkout Gallery
+This is feature for navigating into Shire and Checkout
 
     @login
-    Scenario: Coba Login
+    Scenario: Checkout Walter henley (white) SKU
         Given user click shrine on homepage

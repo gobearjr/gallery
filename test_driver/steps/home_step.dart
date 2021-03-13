@@ -10,9 +10,17 @@ StepDefinitionGeneric ClickShrineCard() {
   return given<FlutterWorld>(
     'user click shrine on homepage',
     (context) async {
-      final locator = find.text('Shrine');
-    await context.world.driver.scrollIntoView(locator);
-    await FlutterDriverUtils.tap(context.world.driver, locator);
+      final shrine = find.text('Shrine');
+      final next = find.text('NEXT');
+    //  final drawer = find.text('MENU');
+    //  final clothing = find.text('CLOTHING');
+      final sku = find.text('Walter henley (white)');
+    await context.world.driver.scrollIntoView(shrine);
+    await FlutterDriverUtils.tap(context.world.driver, shrine);
+    await FlutterDriverUtils.tap(context.world.driver, next);
+    //await FlutterDriverUtils.tap(context.world.driver, drawer);
+    //await FlutterDriverUtils.tap(context.world.driver, clothing);
+    await context.world.driver.scrollIntoView(sku);
     },
   );
 }
