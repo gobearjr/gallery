@@ -14,8 +14,4 @@ class HomePageAction {
     driver = flutterDriver;
     cardShrine = find.text(elementHome.shrineCard);
   }
-
-  Future<void> clickShrineCard() async {
-    await driver.tap(cardShrine);
-  }
 }
