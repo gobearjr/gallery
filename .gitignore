@@ -10,6 +10,7 @@
 .svn/
 .firebase/
 .flutter-plugins-dependencies
+report.json
 
 # IntelliJ related
 *.iml

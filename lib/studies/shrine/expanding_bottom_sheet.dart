@@ -420,7 +420,7 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet>
             children: [
               AnimatedPadding(
                 padding: _horizontalCartPaddingFor(numProducts),
-                child: const Icon(Icons.shopping_cart),
+                child: const Icon(Icons.shopping_cart, key: Key('cartItem')),
                 duration: const Duration(milliseconds: 225),
               ),
               Container(
